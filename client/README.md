@@ -1,39 +1,15 @@
 # client 使用 vue-cli3.0 + TS 搭建的博客项目
 
-## Project setup
+## 第一步  进入项目下载依赖
 
 ```
-yarn install
+yarn 
 ```
 
-### Compiles and hot-reloads for development
+### 第二步 启动项目
 
 ```
 yarn serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn run build
-```
-
-### Run your tests
-
-```
-yarn run test
-```
-
-### Lints and fixes files
-
-```
-yarn run lint
-```
-
-### Run your unit tests
-
-```
-yarn run test:unit
 ```
 
 ### Customize configuration
