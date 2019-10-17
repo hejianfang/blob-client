@@ -28,5 +28,6 @@ module.exports = {
             ]
         }
     },
-    pages: pagesConfig()
+    pages: pagesConfig(),
+    productionSourceMap: false
 }
