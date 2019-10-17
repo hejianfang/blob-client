@@ -11,7 +11,13 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component({
   components: {},
 })
-export default class About extends Vue {}
+export default class About extends Vue { }
 </script>
 <style lang="less">
+.about {
+  .about-wraps {
+    color: #fff;
+    background: red;
+  }
+}
 </style>
