@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header title="博客"
+    <Header title="我的博客"
             :menus="menus"
             v-if="!isIndex">
     </header>
@@ -80,7 +80,7 @@ html {
       padding: 14px 20px;
       background-color: #fff;
       height: calc(100vh - 100px);
-      opacity: 0.6;
+      opacity: 0.7;
       border-radius: 10px;
       overflow-y: scroll;
       &::-webkit-scrollbar {

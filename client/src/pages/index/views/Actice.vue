@@ -48,7 +48,8 @@ export default class Actice extends Vue { }
         ul {
           li {
             cursor: pointer;
-            background-color: rgba(131, 114, 114, 0.6);
+            background-color: rgba(221, 194, 194, 0.8);
+            box-shadow: 0 0 20px 0 rgba(214, 125, 177, 0.23);
             padding: 10px 16px;
             display: flex;
             align-self: center;
