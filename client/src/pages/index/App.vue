@@ -8,7 +8,8 @@
                    class='lizi'
                    :particlesNumber="100"
                    shapeType="star" />
-    <div class="main">
+    <div :class="isIndex?'main':'main main-wraps'"
+         :style="{top: top}">
       <router-view />
     </div>
   </div>
@@ -30,12 +31,15 @@ export default class App extends Vue {
     { name: '关于', path: '/about' },
   ];
   private isIndex: boolean = false;
+  private top: string = '0px';
   @Watch('$route')
   private routeChange(val: Route): void {
     if (val.path === '/index') {
       this.isIndex = true;
+      this.top = '0px';
     } else {
       this.isIndex = false;
+      this.top = '86px';
     }
   }
 }
@@ -64,11 +68,17 @@ export default class App extends Vue {
     pointer-events: none;
     z-index: 11;
     position: absolute;
-    top: 86px;
-    max-width: 80vw;
+    max-width: 88vw;
     left: 0;
     right: 0;
     margin: auto;
+    &.main-wraps {
+      padding: 14px 20px;
+      background-color: #fff;
+      min-height: calc(100vh - 100px);
+      opacity: 0.6;
+      border-radius: 10px;
+    }
   }
 }
 </style>

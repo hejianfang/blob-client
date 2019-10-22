@@ -16,8 +16,6 @@ export default class About extends Vue { }
 <style lang="less">
 .about {
   .about-wraps {
-    color: #fff;
-    background: red;
   }
 }
 </style>

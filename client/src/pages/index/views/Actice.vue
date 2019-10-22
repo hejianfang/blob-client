@@ -1,6 +1,8 @@
 <template>
   <div class="actice">
-    <div class="actice-wraps"></div>
+    <div class="actice-wraps">
+      <h1>欢迎来到actice</h1>
+    </div>
   </div>
 </template>
 
