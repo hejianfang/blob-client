@@ -45,6 +45,9 @@ export default class App extends Vue {
 }
 </script>
 <style lang="less">
+html {
+  height: 100vh;
+}
 #app {
   .lizi {
     position: absolute;
@@ -54,12 +57,12 @@ export default class App extends Vue {
     pointer-events: auto;
     background-image: url("@{imgUrl}/timg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
   }
   .header {
     z-index: 11;
     height: 66px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -73,11 +76,39 @@ export default class App extends Vue {
     right: 0;
     margin: auto;
     &.main-wraps {
+      pointer-events: auto;
       padding: 14px 20px;
       background-color: #fff;
-      min-height: calc(100vh - 100px);
+      height: calc(100vh - 100px);
       opacity: 0.6;
       border-radius: 10px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+      }
+      &::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        border-radius: 10px;
+        background-color: skyblue;
+        background-image: -webkit-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.2) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.2) 50%,
+          rgba(255, 255, 255, 0.2) 75%,
+          transparent 75%,
+          transparent
+        );
+      }
+      &::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: #ededed;
+        border-radius: 10px;
+      }
     }
   }
 }

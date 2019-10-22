@@ -19,6 +19,10 @@
         "object-literal-sort-keys": false,
         "ordered-imports": false,
         "no-console": false,
+        // "comma-dangle": [
+        //     2,
+        //     "never"
+        // ],
         "quotemark": [
             true,
             "single"
