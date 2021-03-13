@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header title="我的博客"
+    <Header title="我的博客123"
             :menus="menus"
             v-if="!isIndex">
     </header>
